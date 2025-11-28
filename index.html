@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digimon Burguer</title>
+  <link rel="stylesheet" href="styleLandpage.css" />
+</head>
+<body>
+  <!-- ================= HEADER / NAV ================= -->
+  <header id="header">
+    <nav class="navbar">
+      <h1 class="logo">Digimon Burguer</h1>
+
+      <ul class="nav-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#produtos">Produtos</a></li>
+        <li><a href="#avaliacoes">Avaliações</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+
+      <button class="btn-login" onclick="window.location.href='./Login/login.html'">Login</button>
+    </nav>
+  </header>
+
+  <!-- ================= HOME ================= -->
+  <section id="home" class="section-home">
+    <div class="home-content">
+      <h2>Bem-vindo à Digimon Burguer!</h2>
+      <p>A hamburgueria temática do Mundo Digital.</p>
+    </div>
+  </section>
+
+  <!-- ================= SOBRE ================= -->
+  <section id="sobre" class="section-sobre">
+    <h2>Sobre Nós</h2>
+    <p>Nascemos da paixão por Digimon e pela arte de fazer hambúrguer.</p>
+  </section>
+
+  <!-- ================= PRODUTOS ================= -->
+  <section id="produtos" class="section-produtos">
+    <h2>Produtos</h2>
+
+    <div class="produtos-container">
+      <div class="produto-card" id="produto-1">
+        <img src="https://cdn.neemo.com.br/uploads/item/photo/123442/Design_sem_nome.webp" alt="Burguer Agumon" class="produto-img" />
+        <h3 class="produto-nome">Burguer Agumon</h3>
+        <p class="produto-desc">O clássico com toque flamejante!</p>
+        <button class="btn-comprar" onclick="redirectLogin()">Comprar</button>
+      </div>
+
+      <div class="produto-card" id="produto-2">
+        <img src="https://png.pngtree.com/png-vector/20240829/ourmid/pngtree-delicious-and-testy-cheese-burger-png-image_13659847.png" alt="Burguer Gabumon" class="produto-img" />
+        <h3 class="produto-nome">Burguer Gabumon</h3>
+        <p class="produto-desc">Blend especial com queijo inspirado no Digimon lobo.</p>
+        <button class="btn-comprar" onclick="redirectLogin()">Comprar</button>
+      </div>
+
+      <div class="produto-card" id="produto-3">
+        <img src="https://www.shutterstock.com/image-photo/delicious-cheeseburger-fresh-ingredients-juicy-600nw-2592395279.jpg" alt="Burguer Patamon" class="produto-img" />
+        <h3 class="produto-nome">Burguer Patamon</h3>
+        <p class="produto-desc">Leve, fofinho e delicioso.</p>
+        <button class="btn-comprar" onclick="redirectLogin()">Comprar</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= AVALIAÇÕES ================= -->
+  <section id="avaliacoes" class="section-avaliacoes">
+    <h2>Avaliações</h2>
+
+    <div class="avaliacoes-container">
+      <div class="avaliacao-card">
+        <h4 class="cliente-nome">Taichi</h4>
+        <p class="cliente-texto">"Agumon aprovaria esse hambúrguer flamejante!"</p>
+      </div>
+
+      <div class="avaliacao-card">
+        <h4 class="cliente-nome">Matt</h4>
+        <p class="cliente-texto">"Combinação perfeita de sabor e estilo."</p>
+      </div>
+
+      <div class="avaliacao-card">
+        <h4 class="cliente-nome">Sora</h4>
+        <p class="cliente-texto">"Ambiente incrível, comida deliciosa!"</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTATO ================= -->
+  <section id="contato" class="section-contato">
+    <h2>Contato</h2>
+
+    <div class="contato-wrapper">
+      <form class="form-contato" id="form-contato">
+        <input type="text" id="nome" placeholder="Seu nome" required />
+        <input type="email" id="email" placeholder="Seu e-mail" required />
+        <textarea id="mensagem" placeholder="Sua mensagem" required></textarea>
+        <button type="submit" class="btn-enviar">Enviar</button>
+      </form>
+
+      <div class="info-contato">
+        <p><strong>Endereço:</strong> Rua Digiworld, 999</p>
+        <p><strong>Telefone:</strong> (11) 99999-9999</p>
+        <p><strong>Email:</strong> contato@digimonburguer.com</p>
+
+        <div class="redes-sociais">
+          <span>Facebook</span> | <span>Instagram</span> | <span>Twitter</span>
+        </div>
+      </div>
+
+      <div class="contato-mapa">
+        <iframe src="https://t2.tudocdn.net/603541?w=1920" loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer id="footer">
+    <p>© 2025 Digimon Burguer - Todos os direitos reservados.</p>
+    <div class="footer-redes">
+      <span>Facebook</span>
+      <span>Instagram</span>
+      <span>Twitter</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

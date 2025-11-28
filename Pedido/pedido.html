@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pedido - Digimon Burguer</title>
+<link rel="stylesheet" href="pedido.css">
+</head>
+<body>
+
+
+<header class="header">
+<h1>Pedido</h1>
+</header>
+
+
+<main class="pedido-container">
+
+
+<!-- LISTA DE PRODUTOS -->
+<section class="produtos-lista">
+<h2>Produtos</h2>
+
+
+<div class="produto" data-id="1" data-nome="Agumon Burguer" data-preco="25.00" data-img="https://cdn.neemo.com.br/uploads/item/photo/123442/Design_sem_nome.webp">
+<img src="https://cdn.neemo.com.br/uploads/item/photo/123442/Design_sem_nome.webp" alt="Agumon Burguer">
+<h3>Agumon Burguer</h3>
+<p>O clássico hambúrguer flamejante!</p>
+<span class="preco">R$ 25,00</span>
+<button class="btn-add">Adicionar ao Pedido</button>
+</div>
+
+
+<div class="produto" data-id="2" data-nome="Gabumon Cheese" data-preco="28.00" data-img="https://png.pngtree.com/png-vector/20240829/ourmid/pngtree-delicious-and-testy-cheese-burger-png-image_13659847.png">
+<img src="https://png.pngtree.com/png-vector/20240829/ourmid/pngtree-delicious-and-testy-cheese-burger-png-image_13659847.png" alt="Gabumon Cheese">
+<h3>Gabumon Cheese</h3>
+<p>Camadas de queijo digital supremo.</p>
+<span class="preco">R$ 28,00</span>
+<button class="btn-add">Adicionar ao Pedido</button>
+</div>
+
+
+<div class="produto" data-id="3" data-nome="Patamon Crunch" data-preco="22.00" data-img="https://www.shutterstock.com/image-photo/delicious-cheeseburger-fresh-ingredients-juicy-600nw-2592395279.jpg">
+<img src="https://www.shutterstock.com/image-photo/delicious-cheeseburger-fresh-ingredients-juicy-600nw-2592395279.jpg" alt="Patamon Crunch">
+<h3>Patamon Crunch</h3>
+<p>Crocância celestial direto do Digimundo.</p>
+<span class="preco">R$ 22,00</span>
+<button class="btn-add">Adicionar ao Pedido</button>
+</div>
+</section>
+
+
+
+
+<!-- AREA DO PEDIDO -->
+<section class="pedido-area">
+<h2>Seu Pedido</h2>
+
+
+<div id="lista-pedido" class="lista-pedido"></div>
+
+
+<div class="total-area">
+<span>Total:</span>
+<strong id="total">R$ 0,00</strong>
+</div>
+
+
+<button id="btn-finalizar" class="btn-finalizar">Finalizar Pedido</button>
+<p id="msg-pedido" class="msg-pedido"></p>
+</section>
+
+
+</main>
+
+
+<script src="pedido.js"></script>
+</body>
+</html>

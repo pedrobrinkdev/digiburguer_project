@@ -1,0 +1,92 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4 url("img/digimon-bg-login.jpg") center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ===== CONTAINER ===== */
+.login-container {
+  width: 320px;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+.login-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* ===== FORM ===== */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.login-form input {
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #bbb;
+  font-size: 15px;
+}
+
+#btn-login {
+  padding: 12px;
+  background: #ff9f1c;
+  border: none;
+  border-radius: 5px;
+  color: #222;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#btn-login:hover {
+  background: #ff7b00;
+}
+
+/* ===== MENSAGEM ===== */
+.login-msg {
+  margin-top: 10px;
+  font-size: 14px;
+  color: red;
+  min-height: 18px; /* evita pular a tela */
+}
+
+#login-msg {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+
+/* ------------ RESPONSIVIDADE LOGIN ------------ */
+@media (max-width: 578px) {
+  .login-container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .login-form input, .login-form button {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+}

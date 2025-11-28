@@ -1,0 +1,224 @@
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* ================= HEADER ================= */
+header {
+  background: #ffbd2f;
+  padding: 15px 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #222;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.nav-menu a:hover {
+  color: #d62828;
+}
+
+.btn-login {
+  padding: 8px 15px;
+  background: #d62828;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-login:hover {
+  background: #ff3333;
+}
+
+/* ================= SECTIONS ================= */
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.section-home {
+  background: url('https://t4.ftcdn.net/jpg/02/07/02/47/360_F_207024754_prX1ULPFJLk41sQkdfeD2Ry3L86kcKSI.jpg') center/cover no-repeat;
+  color: white;
+  padding: 120px 20px;
+}
+
+/* ================= SOBRE ================= */
+.section-sobre {
+  background: white;
+}
+
+/* ================= PRODUTOS ================= */
+.section-produtos {
+  background: #fff3cd;
+}
+
+.produtos-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.produto-card {
+  background: white;
+  padding: 20px;
+  width: 280px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.produto-img {
+  height: 200px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.btn-comprar {
+  margin-top: 10px;
+  background: #ff9f1c;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  color: #222;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-comprar:hover {
+  background: #ff7518;
+}
+
+/* ================= AVALIAÇÕES ================= */
+.section-avaliacoes {
+  background: #ffe8a1;
+}
+
+.avaliacoes-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.avaliacao-card {
+  background: white;
+  padding: 20px;
+  width: 260px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* ================= CONTATO ================= */
+.section-contato {
+  background: #fff;
+}
+
+.contato-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.form-contato {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  gap: 10px;
+}
+
+.form-contato input,
+.form-contato textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn-enviar {
+  padding: 10px;
+  background: #d62828;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-enviar:hover {
+  background: #ff4444;
+}
+
+.info-contato {
+  width: 260px;
+  text-align: left;
+}
+
+.contato-mapa iframe {
+  width: 300px;
+  height: 250px;
+  border: 0;
+  border-radius: 8px;
+}
+
+/* ================= FOOTER ================= */
+footer {
+  background: #222;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.footer-redes span {
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+/* ------------ RESPONSIVIDADE LANDPAGE ------------ */
+@media (max-width: 578px) {
+  header, main, footer {
+    padding: 10px;
+  }
+
+  .produtos, .avaliacoes {
+    flex-direction: column;
+  }
+
+  .produtos .produto, .avaliacoes .avaliacao {
+    width: 100%;
+  }
+
+  .menu-nav a, .menu-nav button {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+}
