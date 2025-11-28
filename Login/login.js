@@ -48,10 +48,11 @@ form.addEventListener("submit", function (event) {
     msg.textContent = "Login bem-sucedido! Redirecionando...";
 
     setTimeout(() => {
-      window.location.href = "../pedido/pedido.html";
+      window.location.href = "../Pedido/pedido.html";
     }, 1000);
   } else {
     msg.style.color = "red";
     msg.textContent = "Nome ou RA incorretos.";
   }
+
 });
